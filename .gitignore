@@ -1,7 +1,7 @@
 @eaDir
-*.log
+logs
+!logs/.gitkeep
 .DS_Store
 __pycache__/
 keys
 !keys/.gitkeep
-!logs/.gitkeep
