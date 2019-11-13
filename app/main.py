@@ -43,6 +43,9 @@ app = FastAPI(title="JWT")
 # fastAPI exception_handler
 @app.exception_handler(CustomException)
 def fExceptionHandler(request: Request, exception: CustomException):
+    # log
+    fWriteLog(exception.callId, fName, f"{exception.detail}", "error")
+    fWriteLog(exception.callId, fName, f"END Call. Duration: {exception.elapsed}", "info")
     return JSONResponse(
         status_code=exception.statusCode,
         headers=exception.headers,
