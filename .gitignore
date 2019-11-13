@@ -1,0 +1,5 @@
+@eaDir
+*.log
+.DS_Store
+__pycache__/
+keys/*
