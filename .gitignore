@@ -4,3 +4,4 @@
 __pycache__/
 keys
 !keys/.gitkeep
+!logs/.gitkeep
